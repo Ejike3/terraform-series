@@ -66,7 +66,7 @@ key_name = var.instance_keypair
 # Create Security Group - SSH Traffic
 resource "aws_security_group" "vpc-ssh" {
   name        = "vpc-ssh"
-  description = "Dev VPC SSH"
+  description = "Dev VPC SSH" 
   ingress {
     description = "Allow Port 22"
     from_port   = 22
@@ -75,7 +75,7 @@ resource "aws_security_group" "vpc-ssh" {
     cidr_blocks = ["0.0.0.0/0"]
   }
   egress {
-    description = "Allow all ip and ports outboun"
+    description = "Allow all ip and ports outbound"
     from_port   = 0
     to_port     = 0
     protocol    = "-1"
