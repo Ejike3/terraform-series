@@ -20,7 +20,7 @@
 •	A syntax check is done on all the terraform files in the directory, and will display an error if any of the files doesn’t validate.
 
 # **terraform plan**
-•	create a execution plan
+•	create an execution plan
 •	traverses each vertex and requests each provider using parallelism
 •	calculates the difference between the last-known state and
 the current state and presents this difference as the output of the terraform plan operation to user in their terminal
