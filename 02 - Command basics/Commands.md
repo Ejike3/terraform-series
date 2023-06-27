@@ -37,7 +37,7 @@ the current state and presents this difference as the output of the terraform pl
 #**terraform apply**
 •	apply changes to reach the desired state.
 •	scans the current directory for the configuration and applies the changes appropriately.
-•	can be provided with a explicit plan, saved as out from terraform plan
+•	can be provided with an explicit plan, saved as out from terraform plan
 •	If no explicit plan file is given on the command line, terraform apply will create a new plan automatically
   and prompt for approval to apply it
 •	will modify the infrastructure and the state.
@@ -52,7 +52,7 @@ the current state and presents this difference as the output of the terraform pl
 #**terraform refresh**
 •	used to reconcile the state Terraform knows about (via its state file) with the real-world infrastructure
 •	does not modify infrastructure, but does modify the state file
-destroy
+#**destroy**
 •	destroy the infrastructure and all resources
 •	modifies both state and infrastructure
 •	terraform destroy -target can be used to destroy targeted resources
